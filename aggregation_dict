@@ -1,0 +1,80 @@
+## DEFINICIÓN AGREGACIÓN PARA LAS VARIABLES DE INTERES NIVEL MANZANA ##
+agregacion_variables = {#'COD_DANE_A' : 'CODIGO_DANE_', # Código DANE Manzana concatenado
+    
+                     'CONTEO_UNIDADES_VIVIENDA': ['sum'],
+                     'CONTEO_UNIDADES_MIXTO': ['sum'], # Unidades residenciales y otros
+                     'CONTEO_UNIDADES_NO_RESIDENCIAL': ['sum'],# Total de unidades NO RESIDENCIALES
+                     'CONTEO_UNIDADES_LEA': ['sum'], # Lugar especial de alojamineto(LEA)
+                     'CONTEO_UNIDADES_MIXTA_INDUSTRIA': ['sum'],
+                     'CONTEO_UNIDADES_MIXTA_COMERCIO': ['sum'],
+                     'CONTEO_UNIDADES_MIXTA_SERVICIOS': ['sum'],
+                     'CONTEO_UNIDADES_MIXTA_AGROPECARIO': ['sum'],
+                     #'TP9_2_9_M' : 'CONTEO_UNIDADES_MIXTA_SIN_INFORMACION',
+    
+                     'CONTEO_UNIDADES_NO_RESIDENCIAL_INDUSTRIA': ['sum'],
+                     'CONTEO_UNIDADES_NO_RESIDENCIAL_COMERCIO': ['sum'],
+                     'CONTEO_UNIDADES_NO_RESIDENCIAL_SERVICIOS': ['sum'],
+                     'CONTEO_UNIDADES_NO_RESIDENCIAL_AGROPECUARIO': ['sum'],
+                     'CONTEO_UNIDADES_NO_RESIDENCIAL_INSTITUCIONAL': ['sum'],
+                     'CONTEO_UNIDADES_NO_RESIDENCIAL_LOTE': ['sum'],
+                     'CONTEO_UNIDADES_NO_RESIDENCIAL_PARQUE_ZONA_VERDE': ['sum'],
+                     'CONTEO_UNIDADES_NO_RESIDENCIAL_MINERO_EVERGETICO': ['sum'],
+                     'CONTEO_UNIDADES_NO_RESIDENCIAL_CONSERVACION_AMBIENTAL': ['sum'],
+                     'CONTEO_UNIDADES_NO_RESIDENCIAL_CONSTRUCCION': ['sum'],
+                     #'TP9_3_99'  : 'CONTEO_UNIDADES_NO_RESIDENCIAL_SIN_INFORMACION',
+    
+                     'NUMERO_VIVIENDAS': ['sum'],
+                     'NUMERO_VIVIENDAS_TIPO_CASA': ['sum'],
+                     'NUMERO_VIVIENDAS_TIPO_APARTAMENTO': ['sum'],
+                     'NUMERO_VIVIENDAS_TIPO_CUARTO': ['sum'],
+                     'NUMERO_VIVIENDAS_TIPO_TRADICIONAL_INDIGENA': ['sum'],
+                     'NUMERO_VIVIENDAS_TIPO_TRADICONAL_ETNICA': ['sum'],
+                     'NUMERO_VIVIENDAS_TIPO_OTRO': ['sum'],
+                      
+                     'CONTEO_HOGARES': ['sum'],
+    
+                     'CONTEO_VIVIENDA_CON_ENERGIA_ELECTRICA': ['sum'],
+                     'CONTEO_VIVIENDA_SIN_ENERGIA_ELECTRICA': ['sum'],
+    
+                     'CONTEO_VIVIENDA_FACTURA_EE_ESTRATO_1': ['sum'], # Energia Electrica
+                     'CONTEO_VIVIENDA_FACTURA_EE_ESTRATO_2': ['sum'],
+                     'CONTEO_VIVIENDA_FACTURA_EE_ESTRATO_3': ['sum'],
+                     'CONTEO_VIVIENDA_FACTURA_EE_ESTRATO_4': ['sum'],
+                     'CONTEO_VIVIENDA_FACTURA_EE_ESTRATO_5': ['sum'],
+                     'CONTEO_VIVIENDA_FACTURA_EE_ESTRATO_6': ['sum'],
+                     'CONTEO_VIVIENDA_FACTURA_EE_SIN_ESTRATO': ['sum'],
+    
+                     'CONTEO_VIVIENDA_CON_ACUEDUCTO': ['sum'],
+                     'CONTEO_VIVIENDA_SIN_ACUEDUCTO': ['sum'],
+                     'CONTEO_VIVIENDA_CON_ALCANTARILLADO': ['sum'],
+                     'CONTEO_VIVIENDA_SIN_ALCANTARILLADO': ['sum'],
+                     'CONTEO_VIVIENDA_CON_GAS_NATURAL': ['sum'],
+                     'CONTEO_VIVIENDA_SIN_GAS_NATURAL': ['sum'],
+                     #'STP19_GAS9' : 'CONTEO_VIVIENDA_SIN_INFORMACION_GAS_NATURAL',
+                     'CONTEO_VIVIENDA_CON_RECOLECCION_BASURAS': ['sum'],
+                     'CONTEO_VIVIENDA_SIN_RECOLECCION_BASURAS': ['sum'],
+                     'CONTEO_VIVIENDA_CON_INTERNET': ['sum'],
+                     'CONTEO_VIVIENDA_SIN_INTERNET': ['sum'],
+                     #'STP19_INT9' : 'CONTEO_VIVIENDA_SIN_INFORMACION_INTERNET',
+    
+                     'NUMERO_PERSONAS': ['sum'],
+                     'NUMERO_DE_HOMBRES': ['sum'],
+                     'NUMERO_DE_MUJERES': ['sum'],
+                     #'STPERSON_S' : 'NUMERO_DE_PERSONAS_HOGARES_PARTICULARES',
+                     'NUMERO_PERSONAS_ENTRE_0_9_ANIO': ['sum'],
+                     'NUMERO_PERSONAS_ENTRE_10_19_ANIO': ['sum'],
+                     'NUMERO_PERSONAS_ENTRE_20_29_ANIO': ['sum'],
+                     'NUMERO_PERSONAS_ENTRE_30_39_ANIO': ['sum'],
+                     'NUMERO_PERSONAS_ENTRE_40_49_ANIO': ['sum'],
+                     'NUMERO_PERSONAS_ENTRE_50_59_ANIO': ['sum'],
+                     'NUMERO_PERSONAS_ENTRE_60_69_ANIO': ['sum'],
+                     'NUMERO_PERSONAS_ENTRE_70_79_ANIO': ['sum'],
+                     'NUMERO_PERSONAS_ENTRE_MAS_80_ANIO': ['sum'],
+    
+                     'NUMERO_PERSONAS_CON_PRIMARIA': ['sum'],
+                     'NUMERO_PERSONAS_CON_SECUNDARIA': ['sum'],
+                     'NUMERO_PERSONAS_CON_EDUCACION_SUPERIOR': ['sum'],
+                     'NUMERO_PERSONAS_CON_POSTGRADO': ['sum'],
+                     'NUMERO_PERSONAS_SIN_EDUCACION': ['sum'],
+                     #'STP51_99_E' : 'NUMERO_PERSONAS_SIN_INFORMACION_EDUCACION',
+}

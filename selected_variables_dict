@@ -1,0 +1,93 @@
+## EXTRACCIÓN DE VARIABLES DE INTERES ##
+variables_interes = {#'COD_DANE_A' : 'CODIGO_DANE_', # Código DANE Manzana concatenado
+                     'DPTO_CCDGO' : 'CODIGO_DEPARTAMENTO', # Código Departamento
+                     'MPIO_CCDGO' : 'CODIGO_MUNICIPIO', # Código Municipio
+                     #'MPIO_CNMBR' : 'NOMBRE_MUNICIPIO', # 
+                     'CLAS_CCDGO' : 'CLASE_MUNICIPIO', # 1 Cabecera municipal, 2 centro poblando 3 resto municipreio
+                     'LATITUD'    : 'LATITUD',
+                     'LONGITUD'   : 'LONGITUD',
+
+                     'TP9_1_USO' : 'CONTEO_UNIDADES_VIVIENDA',
+                     'TP9_2_USO' : 'CONTEO_UNIDADES_MIXTO', # Unidades residenciales y otros
+                     'TP9_3_USO' : 'CONTEO_UNIDADES_NO_RESIDENCIAL',# Total de unidades NO RESIDENCIALES
+                     'TP9_4_USO' : 'CONTEO_UNIDADES_LEA', # Lugar especial de alojamineto(LEA)
+                     'TP9_2_1_MI' : 'CONTEO_UNIDADES_MIXTA_INDUSTRIA',
+                     'TP9_2_2_MI' : 'CONTEO_UNIDADES_MIXTA_COMERCIO',
+                     'TP9_2_3_MI' : 'CONTEO_UNIDADES_MIXTA_SERVICIOS',
+                     'TP9_2_4_MI' : 'CONTEO_UNIDADES_MIXTA_AGROPECARIO',
+                     #'TP9_2_9_M' : 'CONTEO_UNIDADES_MIXTA_SIN_INFORMACION',
+    
+                     'TP9_3_1_NO' : 'CONTEO_UNIDADES_NO_RESIDENCIAL_INDUSTRIA',
+                     'TP9_3_2_NO' : 'CONTEO_UNIDADES_NO_RESIDENCIAL_COMERCIO',
+                     'TP9_3_3_NO' : 'CONTEO_UNIDADES_NO_RESIDENCIAL_SERVICIOS',
+                     'TP9_3_4_NO' : 'CONTEO_UNIDADES_NO_RESIDENCIAL_AGROPECUARIO',
+                     'TP9_3_5_NO' : 'CONTEO_UNIDADES_NO_RESIDENCIAL_INSTITUCIONAL',
+                     'TP9_3_6_NO' : 'CONTEO_UNIDADES_NO_RESIDENCIAL_LOTE',
+                     'TP9_3_7_NO' : 'CONTEO_UNIDADES_NO_RESIDENCIAL_PARQUE_ZONA_VERDE',
+                     'TP9_3_8_NO' : 'CONTEO_UNIDADES_NO_RESIDENCIAL_MINERO_EVERGETICO',
+                     'TP9_3_9_NO' : 'CONTEO_UNIDADES_NO_RESIDENCIAL_CONSERVACION_AMBIENTAL',
+                     'TP9_3_10_N'  : 'CONTEO_UNIDADES_NO_RESIDENCIAL_CONSTRUCCION',
+                     #'TP9_3_99'  : 'CONTEO_UNIDADES_NO_RESIDENCIAL_SIN_INFORMACION',
+    
+                     'TVIVIENDA' : 'NUMERO_VIVIENDAS',
+                     'TP14_1_TIP' : 'NUMERO_VIVIENDAS_TIPO_CASA',
+                     'TP14_2_TIP' : 'NUMERO_VIVIENDAS_TIPO_APARTAMENTO',
+                     'TP14_3_TIP' : 'NUMERO_VIVIENDAS_TIPO_CUARTO',
+                     'TP14_4_TIP' : 'NUMERO_VIVIENDAS_TIPO_TRADICIONAL_INDIGENA',
+                     'TP14_5_TIP' : 'NUMERO_VIVIENDAS_TIPO_TRADICONAL_ETNICA',
+                     'TP14_6_TIP' : 'NUMERO_VIVIENDAS_TIPO_OTRO',
+                      
+                     'TP16_HOG'  : 'CONTEO_HOGARES',
+    
+                     'TP19_EE_1' : 'CONTEO_VIVIENDA_CON_ENERGIA_ELECTRICA',
+                     'TP19_EE_2' : 'CONTEO_VIVIENDA_SIN_ENERGIA_ELECTRICA',
+    
+                     'TP19_EE_E1' : 'CONTEO_VIVIENDA_FACTURA_EE_ESTRATO_1', # Energia Electrica
+                     'TP19_EE_E2' : 'CONTEO_VIVIENDA_FACTURA_EE_ESTRATO_2',
+                     'TP19_EE_E3' : 'CONTEO_VIVIENDA_FACTURA_EE_ESTRATO_3',
+                     'TP19_EE_E4' : 'CONTEO_VIVIENDA_FACTURA_EE_ESTRATO_4',
+                     'TP19_EE_E5' : 'CONTEO_VIVIENDA_FACTURA_EE_ESTRATO_5',
+                     'TP19_EE_E6' : 'CONTEO_VIVIENDA_FACTURA_EE_ESTRATO_6',
+                     'TP19_EE_E9' : 'CONTEO_VIVIENDA_FACTURA_EE_SIN_ESTRATO',
+    
+                     'TP19_ACU_1' : 'CONTEO_VIVIENDA_CON_ACUEDUCTO',
+                     'TP19_ACU_2' : 'CONTEO_VIVIENDA_SIN_ACUEDUCTO',
+                     'TP19_ALC_1' : 'CONTEO_VIVIENDA_CON_ALCANTARILLADO',
+                     'TP19_ALC_2' : 'CONTEO_VIVIENDA_SIN_ALCANTARILLADO',
+                     'TP19_GAS_1' : 'CONTEO_VIVIENDA_CON_GAS_NATURAL',
+                     'TP19_GAS_2' : 'CONTEO_VIVIENDA_SIN_GAS_NATURAL',
+                     #'STP19_GAS9' : 'CONTEO_VIVIENDA_SIN_INFORMACION_GAS_NATURAL',
+                     'TP19_RECB1' : 'CONTEO_VIVIENDA_CON_RECOLECCION_BASURAS',
+                     'TP19_RECB2' : 'CONTEO_VIVIENDA_SIN_RECOLECCION_BASURAS',
+                     'TP19_INTE1' : 'CONTEO_VIVIENDA_CON_INTERNET',
+                     'TP19_INTE2' : 'CONTEO_VIVIENDA_SIN_INTERNET',
+                     #'STP19_INT9' : 'CONTEO_VIVIENDA_SIN_INFORMACION_INTERNET',
+    
+                     'TP27_PERSO' : 'NUMERO_PERSONAS',
+                     'TP32_1_SEX' : 'NUMERO_DE_HOMBRES',
+                     'TP32_2_SEX' : 'NUMERO_DE_MUJERES',
+                     #'STPERSON_S' : 'NUMERO_DE_PERSONAS_HOGARES_PARTICULARES',
+                     'TP34_1_EDA' : 'NUMERO_PERSONAS_ENTRE_0_9_ANIO',
+                     'TP34_2_EDA' : 'NUMERO_PERSONAS_ENTRE_10_19_ANIO',
+                     'TP34_3_EDA' : 'NUMERO_PERSONAS_ENTRE_20_29_ANIO',
+                     'TP34_4_EDA' : 'NUMERO_PERSONAS_ENTRE_30_39_ANIO',
+                     'TP34_5_EDA' : 'NUMERO_PERSONAS_ENTRE_40_49_ANIO',
+                     'TP34_6_EDA' : 'NUMERO_PERSONAS_ENTRE_50_59_ANIO',
+                     'TP34_7_EDA' : 'NUMERO_PERSONAS_ENTRE_60_69_ANIO',
+                     'TP34_8_EDA' : 'NUMERO_PERSONAS_ENTRE_70_79_ANIO',
+                     'TP34_9_EDA' : 'NUMERO_PERSONAS_ENTRE_MAS_80_ANIO',
+    
+                     'TP51PRIMAR' : 'NUMERO_PERSONAS_CON_PRIMARIA',
+                     'TP51SECUND' : 'NUMERO_PERSONAS_CON_SECUNDARIA',
+                     'TP51SUPERI' : 'NUMERO_PERSONAS_CON_EDUCACION_SUPERIOR',
+                     'TP51POSTGR' : 'NUMERO_PERSONAS_CON_POSTGRADO',
+                     'TP51_13_ED' : 'NUMERO_PERSONAS_SIN_EDUCACION',
+                     #'STP51_99_E' : 'NUMERO_PERSONAS_SIN_INFORMACION_EDUCACION',
+
+                     'NMB_LC_CM'  : 'COMUNA',
+                     'geometry'   : 'geometry',
+                     'manzana'    : 'manzana',
+                     'pdv1'       : 'pdv1',
+                     'pdv2'       : 'pdv2',
+                     'pdv3'       : 'pdv3'
+}
